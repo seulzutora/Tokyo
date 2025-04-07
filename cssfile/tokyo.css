@@ -13,7 +13,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.text-container{
+.text-container {
     position: relative;
 }
 
@@ -23,8 +23,10 @@ html {
     margin: 30px auto 0;
     background-color: #ffffff00;
     display: flex;
-    justify-content: space-between; /* Align children elements with space between */
-    align-items: center; /* Center align vertically */
+    justify-content: space-between;
+    /* Align children elements with space between */
+    align-items: center;
+    /* Center align vertically */
 }
 
 .center {
@@ -32,8 +34,8 @@ html {
 }
 
 .navs {
-    flex-grow: 1; /* Allow the navigationlinks to grow to fill available space */
-    text-align: center; /* Center align the navigation links */
+    flex-grow: 1;
+    text-align: center;
 }
 
 
@@ -43,10 +45,10 @@ nav {
     background-color: #ffffff00;
     text-align: center;
     display: flex;
-    justify-content: center; /* Center align the navigation items */
-    padding-left: 20px; /* Add padding to the left side */  
+    justify-content: center;
+    padding-left: 20px;
 }
-  
+
 header {
     width: 100%;
     margin: 0 auto;
@@ -57,16 +59,17 @@ a {
     font-family: 'Freesentation-9Black';
     text-decoration: none;
     color: #ffffff;
-    margin-right: 20px; /* Set margin between anchor tags to 10px */
+    margin-right: 20px;
 }
 
-/* 웰컴투도쿄 ########################################################################### */
+/* 웰컴투도쿄 */
 
-.welcome, .to, .tokyo {
-    /* position: absolute; */
+.welcome,
+.to,
+.tokyo {
     font-family: 'Freesentation-9Black';
     color: #464646;
-    text-shadow: 0 0 15px rgba(255, 206, 234, 0.7); /* 텍스트 그림자 추가 */
+    text-shadow: 0 0 15px rgba(255, 206, 234, 0.7);
     z-index: -1;
 }
 
@@ -97,13 +100,15 @@ a {
     .welcome {
         font-size: 20vw;
     }
+
     .to {
         font-size: 15vw;
         line-height: 1;
         margin-left: 30vw;
     }
+
     .tokyo {
-        font-size:50vw;
+        font-size: 50vw;
     }
 }
 
@@ -112,39 +117,40 @@ a {
     .welcome {
         font-size: 10vw;
     }
+
     .to {
         font-size: 8vw;
         line-height: 0.8;
         margin-left: 50vw;
     }
+
     .tokyo {
         font-size: 15vw;
     }
 }
-/* 배경사진 ########################################################################### */
+
+/* 배경사진 */
 
 body {
     margin: 0;
     padding: 0;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('./img/도쿄배경.jpg'); /* 이미지 경로 */
+    background-image: url('./img/도쿄배경.jpg');
     background-size: cover;
-    background-position: center; /* 이미지의 중앙을 맞추도록 */
-    background-repeat: no-repeat; /* 이미지가 반복되지 않도록 */
-    
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/* h1 ############################################################### */
+/* h1 */
 .font {
     margin: 30px;
-    
+
 }
 
 
-/* 탑으로 가는 버튼 ########################################################################### */
+/* 탑으로 가는 버튼 */
 .scroll-to-top {
     position: fixed;
     right: 20px;
@@ -168,26 +174,25 @@ body {
     opacity: 1;
 }
 
-/* 상단 세줄 바 ################################################ */
+/* 상단 세줄 바 */
 
 /* 내비게이션 메뉴 기본 스타일 */
 .navigation {
-    display: none; /* 처음에는 숨겨짐 */
+    display: none;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.8); /* 배경 투명 설정 */
-    backdrop-filter: blur(10px); /* 배경 블러 효과 추가 (선택 사항) */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0)); /* 그라데이션을 사용하여 위쪽은 선명하게, 아래쪽은 투명하게 설정 */
-    
-    transition: opacity 0.3s ease, transform 0.3s ease; /* 트랜지션 효과 추가 */
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 /* 스크롤 후 표시될 때 적용될 스타일 */
 .navigation.visible {
-    display: flex; /* 스크롤 후 표시될 때 flex로 설정 */
-    background-color: rgba(255, 255, 255, 0.6); /* 내비게이션이 나타날 때 배경 투명도를 조절하여 부드럽게 나타나도록 함 */
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .menu {
@@ -195,23 +200,23 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: flex-end; /* 공간을 균등하게 배분하여 이미지가 오른쪽에 위치하게 함 */
+    justify-content: flex-end;
     width: 100%;
-    align-items: center; /* 수직 중앙 정렬 */
+    align-items: center;
     z-index: 1000;
 }
 
-.menu > li {
+.menu>li {
     position: relative;
 }
 
-.menu > li > div > img {
+.menu>li>div>img {
     width: 50px;
     cursor: pointer;
     margin-right: 10px;
 }
 
-.menu > li > div {
+.menu>li>div {
     display: flex;
     align-items: center;
 }
@@ -226,19 +231,19 @@ body {
     opacity: 0.8;
 }
 
-.menu > li > div > a {
+.menu>li>div>a {
     text-decoration: none;
     padding: 14px 10px;
     display: block;
     margin-left: 10px;
 }
 
-.menu > li > a:hover {
+.menu>li>a:hover {
     opacity: 0.9;
     color: pink;
 }
 
-.menu > li ul {
+.menu>li ul {
     display: none;
     position: absolute;
     top: 0px;
@@ -251,22 +256,22 @@ body {
     z-index: 1000;
 }
 
-.menu > li ul li a {
+.menu>li ul li a {
     padding: 15px 15px;
     display: block;
 }
 
-.menu > li ul li a:hover {
+.menu>li ul li a:hover {
     color: pink;
 }
 
-.menu > li:hover ul {
+.menu>li:hover ul {
     display: flex;
     animation: slideIn 0.5s forwards;
 }
 
-.menu > li > div.menu-item {
-    margin-right: 30px; /* 이미지와 텍스트 간의 간격 설정 */
+.menu>li>div.menu-item {
+    margin-right: 30px;
 }
 
 
@@ -275,6 +280,7 @@ body {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -288,25 +294,25 @@ body {
         align-items: flex-start;
     }
 
-    .menu > li {
+    .menu>li {
         margin-right: 0;
         margin-bottom: 10px;
     }
 
-    .menu > li ul {
+    .menu>li ul {
         position: static;
     }
 }
 
 
 .menu-item {
-    color:#333;
+    color: #333;
 }
 
 
 
 
-/* ############################################################################### */
+/* ###### */
 
 .spacing {
     margin-bottom: 90px;
@@ -332,7 +338,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    
     height: 390px;
 }
 
@@ -362,14 +367,13 @@ img {
     padding: 20px;
 }
 
-/* ############################################################################## */
 
 /* 원래 텍스트 스타일 */
 .original-text {
     position: relative;
     background-color: rgba(255, 255, 255, 0);
     z-index: 9999;
-    transition: opacity 0.5s ease; /* 텍스트 변경에 부드러운 효과를 줍니다. */
+    transition: opacity 0.5s ease;
 }
 
 /* 새로운 텍스트 스타일 */
@@ -377,26 +381,24 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0; /* 초기에는 숨겨진 상태입니다. */
-    transition: opacity 0.6s ease; /* 텍스트 변경에 부드러운 효과를 줍니다. */
+    opacity: 0;
+    transition: opacity 0.6s ease;
 }
 
-/* 마우스 호버시 원래 텍스트 스타일 */
 .original-text:hover {
-    opacity: 0; /* 마우스를 호버할 때 원래 텍스트가 사라집니다. */
+    opacity: 0;
 }
 
-/* 마우스 호버시 새로운 텍스트 스타일 */
-.original-text:hover + .newtext {
-    opacity: 1; /* 마우스를 호버할 때 새로운 텍스트가 나타납니다. */
+.original-text:hover+.newtext {
+    opacity: 1;
 }
 
 
 
 
-/* 이미지 ###################################################################### */
+/* 이미지 */
 
-/* 기본 스타일 */
+
 .image-container {
     display: flex;
     align-items: center;
@@ -404,7 +406,7 @@ img {
 }
 
 .image-container img {
-    margin-right: 20px; /* 이미지와 텍스트 사이의 간격 조절 */
+    margin-right: 20px;
 }
 
 .event-image {
@@ -420,24 +422,22 @@ img {
 
 
 .event-title {
-    font-size: 24px; /* 글자 크기를 24px로 설정 */
-    /* color: rgb(255, 155, 201); /* RGB 값으로 색상 지정 */
+    font-size: 24px;
     margin-bottom: 20px;
     margin-top: -30px;
 }
 
 .custom-hr {
-    /*top: 50%; /* 부모 컨테이너의 중앙에 배치 */
     width: 70%;
     border: none;
-    border-top: 1px solid #ccc; /* 수평선 스타일 지정 */
-    margin: 20px 0 70px 0; /* 여백 초기화 */
+    border-top: 1px solid #ccc;
+    margin: 20px 0 70px 0;
 }
 
 .event-info {
     font-size: 16px;
-    line-height: 1.5; /* 줄 간격을 조정하여 가독성을 높임 */
-    color: #333; /* 텍스트 색상을 변경 */
+    line-height: 1.5;
+    color: #333;
     overflow: visible;
 }
 
@@ -452,4 +452,3 @@ img {
         margin-bottom: 20px;
     }
 }
-
