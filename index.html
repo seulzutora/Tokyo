@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cssfile/tokyo.css">
+</head>
+<body>
+    <div class="all">
+        <header>
+            <nav class="navs">
+                <span class="center">
+                    <span class="text-container">
+                        <span class="original-text">
+                            <a href="#도쿄">東京</a>
+                        </span>
+                        <span class="newtext">
+                            <a href="#도쿄">도쿄</a>
+                        </span>
+                    </span>
+                    <span class="text-container">
+                        <span class="original-text">
+                            <a href="#축제">祭り</a>
+                        </span>
+                        <span class="newtext">
+                            <a href="#축제">축제</a>
+                        </span>
+                    </span>
+
+                    <span class="text-container">
+                        <span class="original-text">
+                            <a href="#음식">食べ物</a>
+                        </span>
+                        <span class="newtext">
+                            <a href="#음식">음식</a>
+                        </span>
+                    </span>
+
+                    <span class="text-container">
+                        <span class="original-text">
+                            <a href="#여행">旅行</a>
+                        </span>
+                        <span class="newtext">
+                            <a href="#여행">여행</a>
+                        </span>
+                    </span>
+                    <span class="text-container">
+                        <span class="original-text">
+                            <a href="#코드">コード</a>
+                        </span>
+                        <span class="newtext">
+                            <a href="#코드">코드</a>
+                        </span>
+                    </span>
+                    
+                </span>
+            </nav>
+        </header>
+    </div>
+    <hr style="width: 53%; margin: 0 auto;">
+    <br><br><br>
+    <div class="spacing"></div>
+
+    <div class="center spacing">
+        <h1 class="welcome">WELCOME</h1>
+        <h1 class="to">TO</h1>
+        <h1 class="tokyo">TOKYO</h1>
+    </div>
+    <br><br><br>
+
+    <a href="#" class="scroll-to-top" title="맨 위로 스크롤">&#9650;</a>
+
+    <div class="navigation" id="nav-menu">
+        <ul class="menu">
+            <li>
+                <div>
+                    <img class="menu_image" src="./cssfile/img/상단세줄.png" alt="Menu Image">
+                </div>
+                <ul>
+                    <li><a href="#도쿄" class="menu-item">도쿄</a></li>
+                    <li><a href="#축제" class="menu-item">축제</a></li>
+                    <li><a href="#음식" class="menu-item">음식</a></li>
+                    <li><a href="#여행" class="menu-item">여행</a></li>
+                    <li><a href="#코드" class="menu-item">코드</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navMenu = document.getElementById('nav-menu');
+            const showOnScroll = 260;
+        
+            window.addEventListener('scroll', function() {
+                if (window.scrollY >= showOnScroll) {
+                    navMenu.classList.add('visible');
+                } else {
+                    navMenu.classList.remove('visible');
+                }
+            });
+        });
+        </script>
+        
+
+    
+        
+    <div class="도쿄">
+        
+        <div class="spacing">
+            <h2 id="도쿄" class="center pink">東京</h2>
+            <br>
+            <p class="p center">도쿄도는 일본의 수도이자 최대도시입니다.<br> 혼슈 동부 지방의 간토에 위치한 도쿄 광역권의 핵심 도시이며 일본의 중심지입니다. 도쿄도만 놓고 보면 인구는 약 1,400만 명입니다.<br> 도쿄를 중심으로 일본 수도권이 형성되어 있으며, 일본의 수도권은 세계 최대의 교통 인프라를 형성하고 있고, 세계에서 다국적 대기업의 본사가 가장 많은 도시이기도 합니다.<br>또한 도쿄는 뉴욕, 런던과 함께 세계 3대 도시로 불리기도 합니다.
+            </p>
+        </div>
+        <div class="center">
+            <img src="./cssfile/img/shiny.png">
+        </div>
+        <div class="tokyo-img">
+            <img src="./cssfile/img/tokyo.jpeg">
+        </div>
+        <div class="center spacing" style="margin-top: 10px">
+            <img src="./cssfile/img/shiny.png">
+        </div>
+        <br>
+        <div class="spacing">
+            <hr class="hr">
+        </div>
+        
+        
+        <div class="spacing">
+            <h2 id="축제" class="center pink">祭り</h2>
+            <br>
+            <div class="image-container">
+                <img src="./cssfile/img/산자마츠리.jpg" alt="산자마츠리" width="400" height="400">
+                <div class="event-details">
+                    <h1 class="event-title font">SANZAMATSURI | 三社祭</h1>
+                    <hr class="custom-hr"> <!-- 태그 사이에 수평선을 추가합니다. -->
+                    <p class="event-info">
+                        
+                        에도의 대표적인 서민 마을 아사쿠사 센소지 경내 아사쿠사 신사에서 열리는 도쿄를 대표하는 축제입니다.<br> 산자 축제는 진정한 오감의 향연이라 할 수 있습니다. 신토의 신을 모신 자리를 상징하는 신전 모양을 한 가마인 미코시 100대가 주인공입니다.
+
+                        동네마다 미코시 팀을 꾸려 신사 사이의 거리를 통과하며, 가는 길에는 함성을 지르기도 하고 거대한 가마를 흔들기도 합니다.
+                        
+                        이 전통은 아사쿠사의 상권과 주민에게 복을 불러오기 위한 관습이라고 합니다. <br><br>
+                        날짜: 6월 07일 ~ 6월 17일<br>
+                        장소: 아사쿠사 신사
+                    </p>
+                </div>
+            </div>
+            <br>
+
+            <div class="image-container">
+                <img src="./cssfile/img/간다마츠리.jpg" alt="간다마츠리" width="400" height="400">
+                <div class="event-details">
+                    <h1 class="event-title font">KANDAMATSURI | 神田祭</h1>
+                    <hr class="custom-hr"> <!-- 각각의 <p> 태그 사이에 수평선을 추가합니다. -->
+                    <p class="event-info">
+                        
+                        에도 서민들로부터 천하제天下祭라고 불릴 정도로 예로부터 전국적으로 유명한 축제입니다.<br>
+                        간다 축제는 간다진자 신사의 건립 이래 현재까지 1,300년 이상 이어져온 행사입니다.
+                        축제의 본진 신사이 간다 신사는 번영과 복을 비는 곳입니다. 칠복신에 속하는 에비스와 다이코쿠텐은 이 신사에서 모시는 수호신입니다.
+                        일본의 3대 축제 중 하나로, 매년 5월 15일 직전 주말에 시작되어 약 일주일간 진행됩니다.
+                        <br><br>
+                        날짜: 격년 홀수 해의 월<br>
+                        장소: 간다묘진
+                    </p>
+                </div>
+            </div>
+            <br>
+
+            <div class="image-container">
+                <img src="./cssfile/img/산노마츠리.jpg" alt="산노마츠리" width="400px" height="400px">
+                <div class="event-details">
+                    <h1 class="event-title font">SANNOMATSURI | 山王祭</h1>
+                    <hr class="custom-hr"> <!-- 각각의 <p> 태그 사이에 수평선을 추가합니다. -->
+                    <p class="event-info">
+                        일본에 여름 축제 시즌이 왔음을 알리는 산노마츠리 역시 에도(구 도쿄)에서 가장 유명한 3대 축제 중 하나입니다.<br> 짝수해마다 6월 7일~17일 열리는 산노 마츠리의 신코사이 행렬은 홀수해마다 열리는 간다 축제의 혼마츠리(본축제)와 번갈아가며 열립니다. 간다 축제와 산노 축제는 일종의 자매 행사에 해당합니다.
+                        <br><br>
+                        날짜 : 5월 30일 ~ 6월 1일<br>
+                        장소 : 아카사카 히에신사
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="spacing">
+            <hr class="hr">
+        </div>
+        
+        
+        <div class="spacing">
+            <h2 id="음식" class="center pink">食べ物</h2>
+            <br>
+
+            <div class="image-container">
+                <img src="./cssfile/img/스시.jpeg" alt="스시" width="400px" height="400px">
+                <div class="event-details">
+                    <h1 class="event-title font">SUSHI | 寿司</h1>
+                    <hr class="custom-hr">
+                    <p class="event-info">
+                        맛은 물론이고 눈으로도 즐길 수 있는 스시를 드신다면 다양한 스타일을 즐길 수 있는 도쿄가 제일입니다.<br> 니기리즈시にぎりず市(한 입 크기의 신선한 생선 토막을 초밥 위에 얹은 요리)부터 지라시스시ジラシス市(양념한 야채를 넣은 초밥 위에 다양한 해산물과 계란을 얹은 요리)까지 원하는 스타일로 마음껏 즐기시기 바랍니다.<br> 당시의 ‘니기리즈시’는 지금의 2, 3배 크기였지만, 그럼에도 불구하고 하코즈시보다 간편하게 먹을 수 있었기 때문에 단번에 널리 퍼졌습니다. 그리고 에도 만에서 잡히는 풍부한 생선을 사용했기 때문에 ‘에도마에스시江戸前寿司’로 불리게 된 것입니다.
+                    </p>
+                </div>
+            </div>
+            
+            <br>
+            <div class="image-container">
+                <img src="./cssfile/img/몬자야끼.jpeg" alt="몬자야끼" width="400px" height="400px">
+                <div class="event-details">
+                    <h1 class="event-title font">MONJAYAKI | もんじゃ焼き</h1>
+                    <hr class="custom-hr">
+                    <p class="event-info">
+                        물기가 많은 밀가루 반죽에 손님이 직접 속재료를 섞어서 철판에 구워 뜨끈뜨끈하게 먹는 것이 몬자야키의 묘미입니다. <br>
+                        몬자야키는 에도시대 말기 츠키시마의 막과자 가게 앞에서 판매되던 저렴한 간식거리에서 유래했다고 합니다. 종이나 글쓰기 도구를 구하기 어려웠던 시절에 아이들은 철판 위에 밀가루 반죽을 구우면서 작은 주걱으로 반죽에 글자를 써서 외웠다고 합니다. 처음에는 ‘글자’를 의미하는 일본어 ‘모지文字’와 ‘구이’를 의미하는 일본어 ‘야키焼き’를 합쳐 ‘모지야키文字焼き’라 했지만, 나중에 ‘몬자야키もんじゃ焼き’로 불리게 되었습니다.
+                    </p>
+                </div>
+            </div>
+            <br>
+
+            <div class="image-container">
+                <img src="./cssfile/img/소바.jpeg" alt="소바" width="400px" height="400px">
+                <div class="event-details">
+                    <h1 class="event-title font">SOBA | そば</h1>
+                    <hr class="custom-hr">
+                    <p class="event-info">
+                        패스트푸드의 원조로서 에도시대 중기에 인기를 모았던 소바(메밀국수)는 이제 도쿄를 대표하는 요리 중 하나가 되었습니다. 유명한 소바 가게가 많은 것도 도쿄의 매력 포인트입니다. 메밀의 향을 느끼면서 맛있게 드셔 보세요. <br>
+                        먹을 때 소리를 내면서 먹어도 되는 소수의 요리 중 하나가 소바입니다. 메밀의 향을 제대로 느끼려면 후루룩 소리를 내면서 면을 빨아들이는 것이 가장 좋다는 생각 때문입니다.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <div class="spacing">
+            <hr class="hr">
+        </div>
+
+
+        
+        <div class="spacing">
+            <h2 id="여행" class="center pink">旅行</h2><br>
+            <h1 class="ryokou font">TOKYO TOWER | 東京タワー</h1>
+            <p class="p center">
+                도쿄타워는 오랫동안 사람들의 가슴 속에 소박한 및을 밝혀 준 영원한 도쿄의 심볼입니다. <br> 도쿄 타워는 지금도 활발히 사용 중인 방송 시설이자 발아래 펼쳐진 눈부신 시내 전경을 감상하기 좋은 명소이기도 합니다. 모더니즘풍 구조물인 타워의 진가는 밤에 조명을 밝혔을 때 밖에서 보면 알 수 있지만, 진짜 짜릿한 순간은 맨 꼭대기로 올라가 역동적인 시내 풍경을 접했을 때입니다.
+
+                타워 아래에는 '풋타운'이라는 복합 쇼핑 공간이 있고, 다국적 브랜드 매장과 식당들이 입점하고 있습니다.
+            </p><br>
+            <div class="tokyo-img">
+                <img src="./cssfile/img/도쿄타워.jpg" alt="도쿄타워" style="width: 675px; height: 390px">
+            </div><br><br>
+
+            <h1 class="ryokou font">SIBUYA SKY | 渋谷スカイ</h1>
+            <p class="p center">
+                시부야 스카이는 높이 229미터의 옥외 전망대로, 도쿄의 멋진 경치를 즐길 수 있는 명소입니다. <br> 옥외 360도 파노라마 뷰로 도쿄를 한눈에 볼 수 있고, 발 아래로 시부야 스크램블 교차로를 내려다볼 수 있습니다. 도쿄 스카이트리와 후지산까지 볼 수 있습니다. 14층 입구부터 최상층까지의 이동 공간에서도 영상, 입체음향, 자연광 연출을 통해 지적 호기심을 자극하는 체험을 즐길 수 있습니다.
+            </p><br>
+            <div class="tokyo-img">
+                <img src="./cssfile/img/시부야스카이.jpg" alt="시부야 스카이" style="width: 675px; height: 390px">
+            </div><br><br>
+
+            <h1 class="ryokou font">SHIBUYA SCRAMBLE CROSSING | 渋谷スクランブル交差点</h1>
+            <p class="p center">
+                일본의 도시 풍경을 상징하는 존재로, "세계에서 가장 유명한 교차점"으로 알려져 있습니다. <br> 시부야 스크램블 교차로는 무수히 많은 영화와 잡지, 블로그에 등장해 도쿄에서 가장 알아보기 쉬운 장소 중 하나입니다. 시부야 역과 교차로 사이의 광장에는 충견 하치코 상이 있는데, 약속 장소로 이름난 명소라 항상 사람이 많습니다.
+            </p><br>
+            <div class="tokyo-img">
+                <img src="./cssfile/img/시부야교차로.jpg" alt="시부야 교차로" style="width: 675px; height: 390px">
+            </div><br><br>
+
+            <h1 class="ryokou font">TOKYO DISNEYLAND | 東京ディズニーランド</h1>
+            <p class="p center">
+                미국이 아닌 다른 국가에 생긴 첫 해외 디즈니랜드입니다. <br> 디즈니 팬이라면 누구나 동의하는 사실일 텐데, 도쿄 디즈니랜드와 디즈니씨는 디즈니의 다른 어떤 테마파크보다도 한 단계 높은 수준을 자랑합니다. 디즈니 팬이 아니라도 평생 잊지 못할 신나는 하루를 보낼 수 있다는 것도 누구나 동의합니다.
+
+                이곳에는 오직 일본 디즈니 시설에서만 접할 수 있는 놀이기구와 체험 프로그램이 있으며, 도쿄를 여행한다면 절대 이곳을 빼놓아서는 안 됩니다.
+            </p><br>
+            <div class="tokyo-img">
+                <img src="./cssfile/img/디즈니랜드.jpg" alt="도쿄 디즈니랜드" style="width: 675px; height: 390px">
+            </div><br><br>
+
+            <h1 class="ryokou font">ODAIBA KAIHIN PARK | お台場海浜公園</h1>
+            <p class="p center">
+                도쿄의 레인보우 브릿지 옆 인공섬에 위치한 오다이바 해변공원은 가족들의 나들이 명소입니다.<br>
+                도쿄 시민들에게는 '오다이바 비치'라는 애칭으로 불리는 약 800m 길이의 인공 해변입니다. 공원 내에는 높이 12.5m의 자유의 여신상 복제품이 세워져 있습니다. 이것은 일본과 프랑스의 국제적 우호관계를 축하하는 이벤트로 '프랑스의 해'를 기념하여 1998년 4월에 세워졌습니다.
+                특히 오다이바 해변공원은 도쿄와 인공섬을 연결하는 도쿄 레인보우 브릿지의 최고 조망을 감상할 수 있는 명소입니다. 야경은 특히 아름다워 야간 조명이 밝혀지면 도쿄 최고의 랜드마크가 됩니다.<br>
+
+                또한 높이 115m라는 세계 최고 높이의 대관람차를 타는 것도 잊지 마세요. 대관람차를 타면 오다이바와 도쿄만을 한눈에 볼 수 있는 최고의 전망을 즐길 수 있습니다.
+            </p><br>
+            <div class="tokyo-img">
+                <img src="./cssfile/img/오다이바.jpg" alt="오다이바 해변공원" style="width: 675px; height: 390px">
+            </div>
+        </div>
+        <br>
+        <div class="spacing">
+            <hr class="hr">
+        </div>
+        
+
+
+        
+        <div class="spacing">
+            <h2 id="코드" class="center pink">コード</h2>
+        </div>
+
+        <div class="code">
+            <img src="./cssfile/img/코드.JPG">
+        </div>
+        <div class="spacing">
+            <br>
+        </div>
+        <br>
+    </div>
+</body>
+</html>
